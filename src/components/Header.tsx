@@ -41,7 +41,7 @@ const Header = () => {
             <img
               src={logoFox}
               alt="Fox Pinturas - Pintura Eletrostática a Pó"
-              className={`h-12 w-auto transition-all duration-300 ${
+              className={`h-16 md:h-20 w-auto transition-all duration-300 ${
                 isScrolled ? '' : 'brightness-0 invert'
               }`}
             />
