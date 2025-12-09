@@ -75,7 +75,7 @@ const Gallery = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <a
-            href="https://wa.me/5541999999999"
+            href="https://wa.me/554132839208"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-orange-dark shadow-accent"
