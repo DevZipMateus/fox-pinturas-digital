@@ -11,7 +11,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Telefone',
-      content: 'Fox Pinturas',
+      content: '(41) 3283-9208',
       subtitle: 'WhatsApp disponível',
     },
     {
@@ -98,7 +98,7 @@ const Contact = () => {
               Entre em contato pelo WhatsApp e receba um atendimento personalizado para o seu projeto.
             </p>
             <a
-              href="https://wa.me/5541999999999"
+              href="https://wa.me/554132839208"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-navy-light shadow-lg mx-auto"
