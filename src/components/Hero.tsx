@@ -16,51 +16,51 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container-custom mx-auto px-4 md:px-8 pt-20">
+      <div className="relative z-10 container-custom mx-auto px-4 sm:px-6 md:px-8 pt-24 pb-12">
         <div className="max-w-3xl">
-          <span className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-semibold mb-6 animate-fade-up">
+          <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-accent/20 text-accent rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6 animate-fade-up">
             12 anos de excelência em pintura industrial
           </span>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4 sm:mb-6 leading-tight animate-fade-up" style={{ animationDelay: '0.1s' }}>
             Fox Pinturas
           </h1>
 
-          <h2 className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <h2 className="text-lg sm:text-xl md:text-2xl text-primary-foreground/90 mb-6 sm:mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: '0.2s' }}>
             Especialistas em pintura eletrostática a pó com acabamentos duráveis e de alto padrão para o setor metalmecânico. Colorindo sua vida!
           </h2>
 
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up" style={{ animationDelay: '0.3s' }}>
             <a
               href="https://wa.me/554132839208"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-orange-dark shadow-accent hover:shadow-lg"
+              className="inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 hover:bg-orange-dark shadow-accent hover:shadow-lg"
             >
               Solicitar orçamento
-              <ArrowRight size={20} />
+              <ArrowRight size={18} className="sm:w-5 sm:h-5" />
             </a>
             <a
               href="#sobre"
-              className="inline-flex items-center justify-center gap-2 bg-primary-foreground/10 text-primary-foreground border border-primary-foreground/30 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-primary-foreground/20"
+              className="inline-flex items-center justify-center gap-2 bg-primary-foreground/10 text-primary-foreground border border-primary-foreground/30 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 hover:bg-primary-foreground/20"
             >
               Conheça a empresa
             </a>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-primary-foreground/20 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-accent">12+</p>
-              <p className="text-primary-foreground/80 text-sm mt-1">Anos de experiência</p>
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-primary-foreground/20 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+            <div className="text-center sm:text-left">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent">12+</p>
+              <p className="text-primary-foreground/80 text-xs sm:text-sm mt-1">Anos de experiência</p>
             </div>
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-accent">1000+</p>
-              <p className="text-primary-foreground/80 text-sm mt-1">Projetos realizados</p>
+            <div className="text-center sm:text-left">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent">1000+</p>
+              <p className="text-primary-foreground/80 text-xs sm:text-sm mt-1">Projetos realizados</p>
             </div>
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-accent">100%</p>
-              <p className="text-primary-foreground/80 text-sm mt-1">Satisfação garantida</p>
+            <div className="text-center sm:text-left">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent">100%</p>
+              <p className="text-primary-foreground/80 text-xs sm:text-sm mt-1">Satisfação garantida</p>
             </div>
           </div>
         </div>

@@ -10,10 +10,10 @@ const About = () => {
 
   return (
     <section id="sobre" className="section-padding bg-secondary">
-      <div className="container-custom mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="container-custom mx-auto px-4 sm:px-6 md:px-8">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center">
           {/* Image */}
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-custom-lg">
               <img
                 src={aboutImage}
@@ -21,39 +21,39 @@ const About = () => {
                 className="w-full h-auto object-cover"
               />
             </div>
-            {/* Accent element */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent rounded-2xl -z-10" />
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/20 rounded-2xl -z-10" />
+            {/* Accent element - hidden on mobile */}
+            <div className="hidden sm:block absolute -bottom-6 -right-6 w-24 md:w-32 h-24 md:h-32 bg-accent rounded-2xl -z-10" />
+            <div className="hidden sm:block absolute -top-6 -left-6 w-16 md:w-24 h-16 md:h-24 bg-primary/20 rounded-2xl -z-10" />
           </div>
 
           {/* Content */}
-          <div>
-            <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-4">
+          <div className="order-1 lg:order-2">
+            <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-accent/10 text-accent rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
               Quem somos
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
               Mais de 12 anos colorindo o mercado metalmecânico
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
               A Fox Pinturas nasceu há 12 anos, em São José dos Pinhais, fruto da iniciativa familiar que acumulava anos de experiência no setor metalmecânico. Percebemos uma grande oportunidade na região: a necessidade crescente por serviços de pintura eletrostática a pó com qualidade superior, prazos confiáveis e atendimento especializado.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-6 sm:mb-8">
               Atuamos no mercado metalmecânico com foco em artigos de aço e alumínio em geral, oferecendo acabamentos duráveis e de alto padrão que superam as expectativas dos nossos clientes.
             </p>
 
             {/* Mission, Vision, Values */}
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               {values.map((item, index) => (
                 <div
                   key={index}
-                  className="flex gap-4 p-4 bg-background rounded-xl shadow-custom-sm card-hover"
+                  className="flex gap-3 sm:gap-4 p-3 sm:p-4 bg-background rounded-xl shadow-custom-sm card-hover"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
-                    <item.icon className="w-6 h-6 text-accent" />
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+                    <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <div className="min-w-0">
+                    <h3 className="font-semibold text-foreground text-sm sm:text-base mb-1">{item.title}</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">{item.description}</p>
                   </div>
                 </div>
               ))}

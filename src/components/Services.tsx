@@ -23,82 +23,82 @@ const Services = () => {
 
   return (
     <section id="servicos" className="section-padding bg-background">
-      <div className="container-custom mx-auto">
+      <div className="container-custom mx-auto px-4 sm:px-6 md:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+          <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-accent/10 text-accent rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
             Nossos serviços
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
             Pintura eletrostática a pó de alta qualidade
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground">
             Oferecemos serviços especializados de pintura eletrostática a pó com as melhores técnicas e materiais do mercado.
           </p>
         </div>
 
         {/* Main Service */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          <div>
-            <h3 className="text-2xl font-bold text-foreground mb-4">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 sm:mb-20">
+          <div className="order-2 lg:order-1">
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3 sm:mb-4">
               O que é pintura eletrostática a pó?
             </h3>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
               A pintura eletrostática a pó é um processo de revestimento em que partículas de tinta em pó são carregadas eletricamente e atraídas para a superfície metálica. Após a aplicação, a peça é aquecida em estufa, onde o pó se funde formando uma camada uniforme, resistente e de excelente acabamento.
             </p>
-            <p className="text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
               Este processo oferece vantagens significativas em relação à pintura líquida convencional, incluindo maior durabilidade, resistência a riscos e corrosão, além de ser uma opção mais sustentável por não utilizar solventes.
             </p>
 
             {/* Benefits Grid */}
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {benefits.map((benefit, index) => (
-                <div key={index} className="flex gap-3 p-4 bg-secondary rounded-xl">
-                  <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
-                    <benefit.icon className="w-5 h-5 text-accent" />
+                <div key={index} className="flex gap-3 p-3 sm:p-4 bg-secondary rounded-xl">
+                  <div className="flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                    <benefit.icon className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground text-sm">{benefit.title}</h4>
-                    <p className="text-xs text-muted-foreground mt-1">{benefit.description}</p>
+                  <div className="min-w-0">
+                    <h4 className="font-semibold text-foreground text-xs sm:text-sm">{benefit.title}</h4>
+                    <p className="text-xs text-muted-foreground mt-0.5 sm:mt-1">{benefit.description}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="order-1 lg:order-2 grid grid-cols-2 gap-3 sm:gap-4">
             <img
               src={serviceImage1}
               alt="Peça metálica com acabamento em pintura eletrostática laranja"
-              className="w-full h-64 object-cover rounded-2xl shadow-custom-md"
+              className="w-full h-40 sm:h-52 md:h-64 object-cover rounded-xl sm:rounded-2xl shadow-custom-md"
             />
             <img
               src={serviceImage2}
               alt="Variedade de peças industriais com pintura eletrostática"
-              className="w-full h-64 object-cover rounded-2xl shadow-custom-md mt-8"
+              className="w-full h-40 sm:h-52 md:h-64 object-cover rounded-xl sm:rounded-2xl shadow-custom-md mt-4 sm:mt-8"
             />
           </div>
         </div>
 
         {/* Applications */}
-        <div className="bg-primary rounded-3xl p-8 md:p-12">
-          <div className="text-center mb-10">
-            <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
+        <div className="bg-primary rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12">
+          <div className="text-center mb-6 sm:mb-10">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-foreground mb-2 sm:mb-4">
               Aplicações
             </h3>
-            <p className="text-primary-foreground/80">
+            <p className="text-sm sm:text-base text-primary-foreground/80">
               Atendemos diversos segmentos do mercado metalmecânico
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
             {applications.map((app, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 bg-primary-foreground/10 rounded-xl p-4 transition-all duration-300 hover:bg-primary-foreground/20"
+                className="flex items-center gap-2 sm:gap-3 bg-primary-foreground/10 rounded-lg sm:rounded-xl p-3 sm:p-4 transition-all duration-300 hover:bg-primary-foreground/20"
               >
-                <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                <span className="text-primary-foreground text-sm font-medium">{app}</span>
+                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0" />
+                <span className="text-primary-foreground text-xs sm:text-sm font-medium">{app}</span>
               </div>
             ))}
           </div>
